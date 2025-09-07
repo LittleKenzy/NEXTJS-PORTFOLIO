@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Inter } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "./provider";
+// import SentryInit from "../components/SentryInit";
+// import CustomFeedbackButton from "../components/CustomFeedbackButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +34,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          {/* <SentryInit /> */}
           {children}
+          {/* <CustomFeedbackButton /> */}
         </ThemeProvider>
       </body>
     </html>

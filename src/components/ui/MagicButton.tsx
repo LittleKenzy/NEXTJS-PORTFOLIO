@@ -1,6 +1,8 @@
+"use client";
+
 import React from 'react'
 
-const MagicButton = ({
+const MagicButton = ({ 
   title, icon, position, handleClick, otherClasses
 }: {
   title: string,
